@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python & AI Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            margin-left: 8px;
+        }
+
+        input[type="radio"] {
+            margin-top: 5px;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python & AI Quiz</h1>
+        <form action="/submit" method="post">
+            <div class="question">
+                <label>1. Hangi Python kütüphanesi, bilgisayar görüşü (Computer Vision) uygulamaları için yaygın olarak kullanılır?</label><br>
+                <input type="radio" id="q1a" name="question1" value="OpenCV">
+                <label for="q1a">OpenCV</label><br>
+                <input type="radio" id="q1b" name="question1" value="TensorFlow">
+                <label for="q1b">TensorFlow</label><br>
+                <input type="radio" id="q1c" name="question1" value="Keras">
+                <label for="q1c">Keras</label><br>
+                <input type="radio" id="q1d" name="question1" value="PyTorch">
+                <label for="q1d">PyTorch</label>
+            </div>
+            <div class="question">
+                <label>2. NLP (Doğal Dil İşleme) için hangi Python kütüphanesi kullanılır?</label><br>
+                <input type="radio" id="q2a" name="question2" value="NLTK">
+                <label for="q2a">NLTK</label><br>
+                <input type="radio" id="q2b" name="question2" value="Pandas">
+                <label for="q2b">Pandas</label><br>
+                <input type="radio" id="q2c" name="question2" value="Matplotlib">
+                <label for="q2c">Matplotlib</label><br>
+                <input type="radio" id="q2d" name="question2" value="Scikit-learn">
+                <label for="q2d">Scikit-learn</label>
+            </div>
+            <div class="question">
+                <label>3. Bir yapay zeka modelini eğitmek için kullanılan veri setlerinin boyutunu azaltmak amacıyla hangi teknik uygulanabilir?</label><br>
+                <input type="radio" id="q3a" name="question3" value="Veri zenginleştirme (Data Augmentation)">
+                <label for="q3a">Veri zenginleştirme (Data Augmentation)</label><br>
+                <input type="radio" id="q3b" name="question3" value="Veri normalizasyonu (Data Normalization)">
+                <label for="q3b">Veri normalizasyonu (Data Normalization)</label><br>
+                <input type="radio" id="q3c" name="question3" value="Boyut azaltma (Dimensionality Reduction)">
+                <label for="q3c">Boyut azaltma (Dimensionality Reduction)</label><br>
+                <input type="radio" id="q3d" name="question3" value="Veri temizleme (Data Cleaning)">
+                <label for="q3d">Veri temizleme (Data Cleaning)</label>
+            </div>
+            <div class="question">
+                <label>4. Aşağıdaki Python kütüphanelerinden hangisi yapay sinir ağları (Artificial Neural Networks) oluşturmak için en yaygın olarak kullanılır?</label><br>
+                <input type="radio" id="q4a" name="question4" value="NumPy">
+                <label for="q4a">NumPy</label><br>
+                <input type="radio" id="q4b" name="question4" value="Scikit-learn">
+                <label for="q4b">Scikit-learn</label><br>
+                <input type="radio" id="q4c" name="question4" value="TensorFlow">
+                <label for="q4c">TensorFlow</label><br>
+                <input type="radio" id="q4d" name="question4" value="Matplotlib">
+                <label for="q4d">Matplotlib</label>
+            </div>
+            <button type="submit" class="submit-btn">Gönder</button>
+        </form>
+        <footer>
+            <p>Hazırlayan: Kubilay Ermicik</p>
+        </footer>
+    </div>
+</body>
+</html>
